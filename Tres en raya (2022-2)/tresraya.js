@@ -1,6 +1,7 @@
 let simbolosD = ["X", "O"]
 let listaCasilla = []
 let turno = 0
+let estado = false
 
 function crearCasilla() {
     for (let i = 0; i < 3; i++) {
@@ -37,18 +38,22 @@ function casillaOnClick(row, col) {
     const seleccion = devolverCasilla(row, col)
 
     //solo un click en la casilla
-    if (!seleccion.mostrandoSimbolo) {
+    if (!seleccion.mostrandoSimbolo && !estado) {
         seleccion.simbolo = simbolosD[turno]
         seleccion.mostrandoSimbolo = true;
         ponerSimboloCasilla()
 
         setTimeout(function(){
+            const h = document.getElementById("titulo")
             if (verificarGanador(row, col)) {
-                alert(`Jugador ${turno + 1} GANO!`)
+                h.innerHTML = "Jugador " + (turno + 1) + " GANO!"
+                estado = true
             }
         
             else if (empate()) {
-                alert("Es un emplate!")
+                const h = document.getElementById("titulo")
+                h.innerHTML = "Es un empate"
+                estado = true
             }
 
             if(turno==0){
