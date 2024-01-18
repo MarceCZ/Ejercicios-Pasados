@@ -1,0 +1,11 @@
+button {
+    height: 100px;
+    width: auto;
+    margin: 5px;
+    border-style: solid;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}

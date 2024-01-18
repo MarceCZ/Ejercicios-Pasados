@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenido {
+    padding: 1% 10% 0% 10%;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.datos {
+    border: 2px rgb(231, 232, 233) solid;
+    border-radius: 5px;
+    padding: 15px 5px 10px 5px;
+    margin-top: 4px;
+}
+
+label {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.encuesta {
+    margin-top: 10px;
+    border-top: 2px rgb(231, 232, 233) solid;
+    padding-top: 15px;
+}
+
+.but {
+    margin-top: 15px;
+}
+
+#bs {
+    padding-left: 43%;
+    padding-right: 4px;
+}
+
+#bc {
+    padding-right: 43%;
+    padding-left: 4px;
+}
+
+.bt {
+    padding: 4px 0px;
+}
+
+#cancel {
+    text-decoration: none;
+    color: white;
+}

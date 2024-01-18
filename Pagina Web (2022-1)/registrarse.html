@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilo2.css">
+</head>
+<body class="cointainer">
+    <div class="contenido">
+        <h1>Registro</h1>
+    <div class="row datos">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name">
+            <label for="lastname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="lastname">
+            <label for="genero" class="sexo">Sexo</label>
+            <br>
+            <input type="checkbox" name="genero" id="masculino">Masculino
+            <input type="checkbox" name="genero" id="femenino">Femenino
+            <input type="checkbox" name="genero" id="nothing">No precisa
+            <br>
+            <label for="pais" class="form-label">Pais</label>
+            <select name="localidad" class="form-select" id="pais">
+                <option value="Peru">Peru</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Bolivia">Bolivia</option>
+            </select>
+            <br>
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username">
+    
+            <label for="passsowrd" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password">
+        </div>
+        <div class="col-6">
+            <h2>Aficiones</h2>
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                    Futbol
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">Leer</button>
+                <button type="button" class="list-group-item list-group-item-action">Correr</button>
+                <button type="button" class="list-group-item list-group-item-action">Danza</button>
+                <button type="button" class="list-group-item list-group-item-action">Ninguno</button>
+            </div>
+    
+            <label for="otro" class="form-label">Otras:</label>
+            <input type="text" class="form-control">
+    
+            <div class="encuesta">
+                <h2>Motivos de inscripcion</h2>
+                <label for="cuadro" class="form-label">Ingrese los motivos por los que desea inscribirse en este
+                    servicio:</label>
+                <textarea name="motivos" class="form-control" id="cuadro" rows="3"></textarea>
+            </div>
+        </div>
+        <!--botones-->
+        <div class="col-md-6 d-grid gap-2 but" id="bs">
+            <button class="btn btn-success bt">
+                Guardar
+            </button>
+    
+        </div>
+        <div class="col-md-6 d-grid gap-2 but" id="bc">
+            <button class="btn btn-danger bt">
+                <a href="./index.html" id="cancel">Cancelar</a>
+            </button>
+    
+        </div>
+    </div>
+    
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

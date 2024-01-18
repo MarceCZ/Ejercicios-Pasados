@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    width: 30%;
+    padding: 15px 25px 10px 25px;
+    margin-top: 25px;
+    border: 2px rgb(231, 232, 233) solid;
+    border-radius: 5px;
+}
+
+.des {
+    padding: 0px;
+}
+
+.rellenar {
+    margin-top: 4px;
+}
+
+#a1 {
+    padding-left: 0px;
+    margin-top: 6px;
+}
+
+#a2 {
+    padding-right: 0px;
+    margin-top: 6px;
+}
+
+#ingresar {
+    text-decoration: none;
+    color: white;
+}
+
+#registrarse {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,8 @@
+.row{
+    margin-top: 20px;
+}
+
+.line {
+    border-right: 2px black solid;
+    padding-right: 5px;
+}
